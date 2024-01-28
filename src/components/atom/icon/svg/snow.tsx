@@ -79,9 +79,9 @@ const Snow = ({ size = 12, className }: IconProps) => {
                     width="41"
                     height="150"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -100,9 +100,9 @@ const Snow = ({ size = 12, className }: IconProps) => {
                     width="41"
                     height="66"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -121,9 +121,9 @@ const Snow = ({ size = 12, className }: IconProps) => {
                     width="31"
                     height="48"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -142,9 +142,9 @@ const Snow = ({ size = 12, className }: IconProps) => {
                     width="54"
                     height="79"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -163,9 +163,9 @@ const Snow = ({ size = 12, className }: IconProps) => {
                     width="19.074"
                     height="26.418"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -184,9 +184,9 @@ const Snow = ({ size = 12, className }: IconProps) => {
                     width="15.27"
                     height="20.762"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -205,9 +205,9 @@ const Snow = ({ size = 12, className }: IconProps) => {
                     width="228"
                     height="48"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -226,9 +226,9 @@ const Snow = ({ size = 12, className }: IconProps) => {
                     width="183"
                     height="27"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -265,11 +265,11 @@ const Snow = ({ size = 12, className }: IconProps) => {
                     y2="71.7967"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#42A0F0" />
+                    <stop stopColor="#42A0F0" />
                     <stop
                         offset="1"
-                        stop-color="#42A0F0"
-                        stop-opacity="0.596"
+                        stopColor="#42A0F0"
+                        stopOpacity="0.596"
                     />
                 </linearGradient>
             </defs>

@@ -30,7 +30,7 @@ const MoonCloudy = ({ size = 12, className }: IconProps) => {
                     <path
                         d="M324.437 278C332.156 278 339.746 276.767 346.996 274.336C354.006 271.985 360.587 268.555 366.557 264.14C372.458 259.776 377.631 254.548 381.932 248.602C386.287 242.582 389.649 235.96 391.925 228.919L391.949 228.847L391.983 228.779C395.01 222.731 397.341 216.333 398.911 209.763C400.526 203.003 401.345 196.017 401.345 188.999C401.345 182.96 400.737 176.925 399.537 171.062C398.368 165.348 396.623 159.728 394.352 154.357C392.121 149.084 389.36 143.997 386.146 139.24C382.962 134.527 379.305 130.095 375.278 126.067C371.25 122.039 366.818 118.383 362.105 115.199C357.347 111.984 352.261 109.224 346.988 106.993C341.617 104.722 335.997 102.977 330.283 101.808C324.42 100.608 318.384 99.9995 312.345 99.9995C302.346 99.9995 292.531 101.645 283.172 104.891L282.383 105.165L281.973 104.436C274.357 90.8942 263.279 79.5216 249.937 71.5478C243.189 67.5152 235.94 64.399 228.391 62.2857C220.602 60.1055 212.512 59 204.345 59C193.361 59 182.638 60.977 172.475 64.876C162.657 68.6427 153.65 74.0837 145.705 81.048C137.806 87.9722 131.251 96.1422 126.221 105.331C121.069 114.745 117.701 124.907 116.211 135.535L116.1 136.33L115.299 136.393C106.341 137.094 97.7219 139.453 89.6818 143.403C81.8694 147.242 74.8932 152.434 68.947 158.834C56.7289 171.987 50 189.123 50 207.087C50 216.66 51.8748 225.947 55.5723 234.689C57.3495 238.891 59.5491 242.943 62.1102 246.734C64.6472 250.489 67.5607 254.02 70.7699 257.23C73.9791 260.439 77.5104 263.352 81.2655 265.889C85.0565 268.45 89.109 270.65 93.3106 272.427C102.052 276.125 111.339 278 120.913 278H312.345H324.437ZM324.437 279H312.345H120.913C81.1966 279 49 246.803 49 207.087C49 169.286 78.1646 138.297 115.221 135.396C121.35 91.6574 158.917 58 204.345 58C238.048 58 267.422 76.5231 282.845 103.946C292.087 100.741 302.012 98.9995 312.345 98.9995C362.051 98.9995 402.345 139.294 402.345 188.999C402.345 203.459 398.936 217.121 392.877 229.227C383.54 258.109 356.427 279 324.437 279Z"
                         fill="white"
-                        fill-opacity="0.5"
+                        fillOpacity="0.5"
                     />
                 </g>
             </g>
@@ -42,9 +42,9 @@ const MoonCloudy = ({ size = 12, className }: IconProps) => {
                     width="406.345"
                     height="280.277"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -63,9 +63,9 @@ const MoonCloudy = ({ size = 12, className }: IconProps) => {
                     width="138.879"
                     height="135.194"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -84,9 +84,9 @@ const MoonCloudy = ({ size = 12, className }: IconProps) => {
                     width="413.345"
                     height="281"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -119,8 +119,8 @@ const MoonCloudy = ({ size = 12, className }: IconProps) => {
                     y2="306.166"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="white" stop-opacity="0.604" />
-                    <stop offset="1" stop-color="white" stop-opacity="0.2" />
+                    <stop stopColor="white" stopOpacity="0.604" />
+                    <stop offset="1" stopColor="white" stopOpacity="0.2" />
                 </linearGradient>
             </defs>
         </svg>

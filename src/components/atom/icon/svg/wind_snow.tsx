@@ -1,7 +1,7 @@
 import React from "react";
 import { IconProps } from "..";
 
-const WindRain = ({ size = 12, className }: IconProps) => {
+const WindSnow = ({ size = 12, className }: IconProps) => {
     return (
         <svg
             className={className}
@@ -129,9 +129,9 @@ const WindRain = ({ size = 12, className }: IconProps) => {
                     width="356.039"
                     height="185.088"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -148,4 +148,4 @@ const WindRain = ({ size = 12, className }: IconProps) => {
     );
 };
 
-export default WindRain;
+export default WindSnow;

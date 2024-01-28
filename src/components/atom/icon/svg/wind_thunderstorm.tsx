@@ -15,20 +15,20 @@ const WindThunderstorm = ({ size = 12, className }: IconProps) => {
                 <path
                     d="M139.687 87.6389C139.687 87.6389 276.776 88.9529 306.457 80.3329C336.138 71.7129 336.1 26.9749 306.457 15.9469C276.814 4.91893 266.683 44.3379 266.683 44.3379"
                     stroke="#D0D0D0"
-                    stroke-width="20"
-                    stroke-linecap="round"
+                    strokeWidth="20"
+                    strokeLinecap="round"
                 />
                 <path
                     d="M149.709 134.656C149.709 134.656 212.256 125.566 239.831 134.656C267.406 143.746 258.625 169.823 245.557 171.015C232.489 172.207 220.431 158.395 220.431 158.395"
                     stroke="#D0D0D0"
-                    stroke-width="20"
-                    stroke-linecap="round"
+                    strokeWidth="20"
+                    strokeLinecap="round"
                 />
                 <path
                     d="M64.8459 31.5889C64.8459 31.5889 95.3649 34.1189 131.528 34.1189C167.691 34.1189 216.708 29.3729 216.708 29.3729"
                     stroke="#D0D0D0"
-                    stroke-width="20"
-                    stroke-linecap="round"
+                    strokeWidth="20"
+                    strokeLinecap="round"
                 />
                 <path
                     d="M324.456 111.556H352.046L336.185 134.847L354.73 135.198L315.806 181.268L325.237 146.143H307.971L324.456 111.556Z"
@@ -67,9 +67,9 @@ const WindThunderstorm = ({ size = 12, className }: IconProps) => {
                     width="358.73"
                     height="185.268"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -89,8 +89,8 @@ const WindThunderstorm = ({ size = 12, className }: IconProps) => {
                     y2="138.405"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FFD100" />
-                    <stop offset="1" stop-color="#FFF0AA" />
+                    <stop stopColor="#FFD100" />
+                    <stop offset="1" stopColor="#FFF0AA" />
                 </linearGradient>
             </defs>
         </svg>

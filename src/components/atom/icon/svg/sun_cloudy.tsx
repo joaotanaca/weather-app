@@ -30,7 +30,7 @@ const SunCloudy = ({ size = 12, className }: IconProps) => {
                     <path
                         d="M314.085 277.762C321.804 277.762 329.394 276.53 336.644 274.099C343.654 271.748 350.235 268.318 356.205 263.903C362.106 259.539 367.279 254.311 371.58 248.365C375.935 242.345 379.297 235.723 381.573 228.682L381.597 228.61L381.631 228.542C384.658 222.494 386.989 216.096 388.559 209.526C390.174 202.766 390.993 195.78 390.993 188.762C390.993 182.723 390.385 176.688 389.185 170.825C388.016 165.111 386.271 159.491 384 154.12C381.769 148.847 379.008 143.76 375.794 139.003C372.61 134.29 368.953 129.858 364.926 125.83C360.898 121.802 356.466 118.146 351.753 114.962C346.995 111.747 341.909 108.987 336.636 106.756C331.265 104.485 325.645 102.74 319.931 101.571C314.067 100.371 308.032 99.7624 301.993 99.7624C291.994 99.7624 282.178 101.408 272.82 104.654L272.031 104.927L271.621 104.199C264.005 90.6572 252.927 79.2846 239.585 71.3108C232.837 67.2782 225.588 64.1619 218.039 62.0486C210.25 59.8684 202.16 58.7629 193.993 58.7629C183.009 58.7629 172.286 60.7399 162.123 64.639C152.305 68.4056 143.298 73.8467 135.353 80.8109C127.454 87.7352 120.899 95.9051 115.869 105.094C110.716 114.508 107.349 124.67 105.859 135.298L105.748 136.093L104.947 136.156C95.9887 136.857 87.3699 139.216 79.3297 143.166C71.5173 147.005 64.5411 152.196 58.5949 158.597C46.3768 171.75 39.6479 188.886 39.6479 206.85C39.6479 216.423 41.5227 225.71 45.2202 234.452C46.9974 238.653 49.1971 242.706 51.7582 246.497C54.2951 250.252 57.2087 253.783 60.4179 256.993C63.627 260.202 67.1583 263.115 70.9135 265.652C74.7044 268.213 78.757 270.413 82.9586 272.19C91.7004 275.888 100.987 277.762 110.561 277.762H301.993H314.085ZM314.085 278.762H301.993H110.561C70.8445 278.762 38.6479 246.566 38.6479 206.85C38.6479 169.049 67.8126 138.06 104.869 135.159C110.998 91.4203 148.565 57.7629 193.993 57.7629C227.695 57.7629 257.07 76.2861 272.492 103.709C281.735 100.504 291.66 98.7624 301.993 98.7624C351.699 98.7624 391.993 139.057 391.993 188.762C391.993 203.222 388.584 216.884 382.525 228.99C373.188 257.872 346.075 278.762 314.085 278.762Z"
                         fill="white"
-                        fill-opacity="0.5"
+                        fillOpacity="0.5"
                     />
                 </g>
             </g>
@@ -42,9 +42,9 @@ const SunCloudy = ({ size = 12, className }: IconProps) => {
                     width="390.345"
                     height="270"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -63,9 +63,9 @@ const SunCloudy = ({ size = 12, className }: IconProps) => {
                     width="164.15"
                     height="133.561"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -84,9 +84,9 @@ const SunCloudy = ({ size = 12, className }: IconProps) => {
                     width="413.345"
                     height="281"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
@@ -119,8 +119,8 @@ const SunCloudy = ({ size = 12, className }: IconProps) => {
                     y2="305.929"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="white" stop-opacity="0.604" />
-                    <stop offset="1" stop-color="white" stop-opacity="0.2" />
+                    <stop stopColor="white" stopOpacity="0.604" />
+                    <stop offset="1" stopColor="white" stopOpacity="0.2" />
                 </linearGradient>
             </defs>
         </svg>

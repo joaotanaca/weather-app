@@ -14,20 +14,20 @@ const WindRain = ({ size = 12, className }: IconProps) => {
                 <path
                     d="M128.687 87.6389C128.687 87.6389 265.776 88.9529 295.457 80.3329C325.138 71.7129 325.1 26.9749 295.457 15.9469C265.814 4.91893 255.683 44.3379 255.683 44.3379"
                     stroke="#D0D0D0"
-                    stroke-width="20"
-                    stroke-linecap="round"
+                    strokeWidth="20"
+                    strokeLinecap="round"
                 />
                 <path
                     d="M162.709 134.656C162.709 134.656 263.317 125.566 307.67 134.656C352.023 143.746 337.9 169.823 316.88 171.015C295.86 172.207 276.463 158.395 276.463 158.395"
                     stroke="#D0D0D0"
-                    stroke-width="20"
-                    stroke-linecap="round"
+                    strokeWidth="20"
+                    strokeLinecap="round"
                 />
                 <path
                     d="M53.846 31.5889C53.846 31.5889 84.365 34.1189 120.528 34.1189C156.691 34.1189 205.708 29.3729 205.708 29.3729"
                     stroke="#D0D0D0"
-                    stroke-width="20"
-                    stroke-linecap="round"
+                    strokeWidth="20"
+                    strokeLinecap="round"
                 />
                 <path
                     d="M21.818 128.089C23.418 128.107 39.636 153.43 39.636 163.271C39.636 167.997 37.7588 172.529 34.4172 175.87C31.0757 179.212 26.5436 181.089 21.818 181.089C17.0924 181.089 12.5603 179.212 9.21877 175.87C5.87725 172.529 4 167.997 4 163.271C4 153.431 20.219 128.071 21.818 128.089Z"
@@ -62,9 +62,9 @@ const WindRain = ({ size = 12, className }: IconProps) => {
                     width="350.825"
                     height="185.089"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
