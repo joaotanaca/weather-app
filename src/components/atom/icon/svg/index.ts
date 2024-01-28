@@ -14,6 +14,8 @@ import RainShowerDense from "./rain_shower_dense";
 import Snow from "./snow";
 import SunClear from "./sun_clear";
 import SunCloudy from "./sun_cloudy";
+import Sunrise from "./sunrise";
+import Sunset from "./sunset";
 import Thunderstorm from "./thunderstorm";
 import Wind from "./wind";
 import WindRain from "./wind_rain";
@@ -37,6 +39,8 @@ export default {
     snow: Snow,
     sun_clear: SunClear,
     sun_cloudy: SunCloudy,
+    sunrise: Sunrise,
+    sunset: Sunset,
     thunderstorm: Thunderstorm,
     wind: Wind,
     wind_rain: WindRain,
