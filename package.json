@@ -10,6 +10,8 @@
         "@openmeteo/sdk": "^1.7.2",
         "axios": "^1.6.7",
         "crypto-js": "^4.2.0",
+        "mobx": "^6.12.0",
+        "mobx-react": "^9.1.0",
         "react": "^17.0.0",
         "react-dom": "^17.0.0",
         "react-router-dom": "^6.21.3"
@@ -20,6 +22,7 @@
         "@types/react-dom": "^17.0.0",
         "autoprefixer": "^10.4.17",
         "eslint": "^8.45.0",
+        "eslint-plugin-mobx": "^0.0.9",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.3",
         "postcss": "^8.4.33",
