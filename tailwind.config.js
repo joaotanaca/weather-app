@@ -7,6 +7,9 @@ export default {
             screens: {
                 "3xl": "1920px",
             },
+            fontFamily: {
+                "nunito-sans": "Nunito Sans, sans-serif",
+            },
         },
     },
     plugins: [],

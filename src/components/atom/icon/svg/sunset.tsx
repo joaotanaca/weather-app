@@ -16,8 +16,8 @@ const Sunset = ({ size = 12, className }: IconProps) => {
                 <path
                     d="M9.5 150.325H127.063L154.928 168.935L183.5 150.325H297.5"
                     stroke="#D0D0D0"
-                    stroke-width="10"
-                    stroke-linecap="round"
+                    strokeWidth="10"
+                    strokeLinecap="round"
                 />
                 <mask
                     id="mask0_7_10873"
@@ -51,9 +51,9 @@ const Sunset = ({ size = 12, className }: IconProps) => {
                     width="306"
                     height="146.738"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -72,9 +72,9 @@ const Sunset = ({ size = 12, className }: IconProps) => {
                     width="181.639"
                     height="141.016"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"

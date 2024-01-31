@@ -7,31 +7,92 @@ const Cloudy = ({ size = 12, className }: IconProps) => {
         <svg
             className={className}
             width={size}
-            height={size * 0.678}
-            viewBox="0 0 414 281"
+            height={size * 0.776}
+            viewBox="0 0 134 104"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <g filter="url(#filter0_f_7_10945)">
-                <g filter="url(#filter1_d_7_10945)">
-                    <path
-                        d="M283.345 249H91.913C73.3426 248.986 55.4976 241.789 42.1137 228.915C28.7298 216.041 20.8447 198.489 20.1092 179.933C19.3737 161.377 25.8448 143.256 38.1677 129.364C50.4906 115.471 67.71 106.884 86.221 105.4C88.8608 86.7599 97.2781 69.4166 110.289 55.8099C123.299 42.2032 140.248 33.0179 158.752 29.5463C177.255 26.0747 196.381 28.4915 213.439 36.4567C230.497 44.4218 244.628 57.5345 253.845 73.9499C270.75 68.0981 289.015 67.4142 306.31 71.9856C323.605 76.557 339.146 86.1764 350.952 99.6169C362.757 113.057 370.292 129.71 372.594 147.45C374.896 165.19 371.862 183.214 363.879 199.223C359.194 213.688 350.047 226.296 337.751 235.239C325.455 244.182 310.641 249 295.437 249H283.345Z"
-                        fill="url(#paint0_linear_7_10945)"
-                    />
-                    <path
-                        d="M295.437 248C303.157 248 310.748 246.767 317.998 244.336C325.009 241.985 331.59 238.554 337.56 234.139C343.462 229.775 348.635 224.547 352.936 218.6C357.29 212.58 360.652 205.957 362.928 198.915L362.951 198.843L362.985 198.775C366.011 192.728 368.341 186.33 369.911 179.761C371.526 173 372.345 166.015 372.345 158.999C372.345 152.96 371.737 146.925 370.537 141.062C369.368 135.348 367.623 129.728 365.352 124.357C363.121 119.084 360.361 113.997 357.146 109.24C353.962 104.527 350.306 100.095 346.278 96.0672C342.25 92.0395 337.819 88.3828 333.106 85.1988C328.348 81.9845 323.261 79.2237 317.988 76.9932C312.617 74.7216 306.997 72.9769 301.283 71.8077C295.42 70.6079 289.385 69.9995 283.345 69.9995C273.346 69.9995 263.531 71.6452 254.172 74.8908L253.383 75.1646L252.973 74.4362C245.357 60.8943 234.279 49.5217 220.937 41.5479C214.189 37.5153 206.94 34.399 199.391 32.2857C191.602 30.1055 183.512 29 175.345 29C164.361 29 153.638 30.977 143.475 34.876C133.657 38.6427 124.65 44.0837 116.705 51.048C108.806 57.9722 102.251 66.1422 97.2213 75.3308C92.0685 84.7451 88.7006 94.9073 87.2113 105.535L87.0998 106.33L86.299 106.393C77.3408 107.094 68.7219 109.453 60.6818 113.403C52.8694 117.242 45.8932 122.434 39.947 128.834C27.7289 141.987 21 159.123 21 177.087C21 186.66 22.8748 195.947 26.5723 204.689C28.3495 208.891 30.5491 212.943 33.1102 216.734C35.6472 220.489 38.5607 224.02 41.7699 227.23C44.9791 230.439 48.5104 233.352 52.2655 235.889C56.0565 238.45 60.109 240.65 64.3106 242.427C73.0525 246.125 82.3391 248 91.9127 248H283.345H295.437ZM295.437 249H283.345H91.9127C52.1966 249 20 216.803 20 177.087C20 139.286 49.1646 108.297 86.221 105.396C92.3504 61.6574 129.917 28 175.345 28C209.048 28 238.422 46.5232 253.845 73.946C263.087 70.7407 273.012 68.9995 283.345 68.9995C333.051 68.9995 373.345 109.294 373.345 158.999C373.345 173.456 369.936 187.118 363.879 199.223C354.544 228.108 327.431 249 295.437 249Z"
-                        fill="white"
-                        fillOpacity="0.5"
-                    />
-                </g>
+            <g filter="url(#filter0_bi_1_535)">
+                <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M113.046 20.2778C113.046 20.8106 113.025 21.3387 112.985 21.8612C115.206 20.0275 118.053 18.9259 121.157 18.9259C128.25 18.9259 134 24.6758 134 31.7685C134 38.6346 128.612 44.2423 121.833 44.5936V44.6111H72.4905V44.5408C66.0333 43.8651 61 38.4046 61 31.7685C61 25.1187 66.0541 19.6493 72.5306 18.9921C73.1938 8.39202 82.001 0 92.7683 0C103.967 0 113.046 9.07867 113.046 20.2778Z"
+                    fill="url(#paint0_linear_1_535)"
+                />
+            </g>
+            <g filter="url(#filter1_f_1_535)">
+                <ellipse
+                    cx="53.5"
+                    cy="72.5"
+                    rx="31.5"
+                    ry="9.5"
+                    fill="#4DB4FF"
+                />
+            </g>
+            <g filter="url(#filter2_bi_1_535)">
+                <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M77 35C77 35.7882 76.9696 36.5693 76.9099 37.3422C80.1949 34.6296 84.4071 33 89 33C99.4934 33 108 41.5066 108 52C108 62.158 100.029 70.4541 90 70.9741V71H89H19H17V70.896C7.44667 69.8966 0 61.8179 0 52C0 42.1618 7.47752 34.07 17.0593 33.0979C18.0405 17.4156 31.0704 5 47 5C63.5685 5 77 18.4315 77 35Z"
+                    fill="url(#paint1_linear_1_535)"
+                />
             </g>
             <defs>
                 <filter
-                    id="filter0_f_7_10945"
-                    x="16"
-                    y="24"
-                    width="361.345"
-                    height="229"
+                    id="filter0_bi_1_535"
+                    x="54"
+                    y="-7"
+                    width="87"
+                    height="58.6111"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feGaussianBlur
+                        in="BackgroundImageFix"
+                        stdDeviation="3.5"
+                    />
+                    <feComposite
+                        in2="SourceAlpha"
+                        operator="in"
+                        result="effect1_backgroundBlur_1_535"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_backgroundBlur_1_535"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="4" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0.82 0 0 0 0 1 0 0 0 0.25 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect2_innerShadow_1_535"
+                    />
+                </filter>
+                <filter
+                    id="filter1_f_1_535"
+                    x="0"
+                    y="41"
+                    width="107"
+                    height="63"
                     filterUnits="userSpaceOnUse"
                     colorInterpolationFilters="sRGB"
                 >
@@ -43,54 +104,90 @@ const Cloudy = ({ size = 12, className }: IconProps) => {
                         result="shape"
                     />
                     <feGaussianBlur
-                        stdDeviation="2"
-                        result="effect1_foregroundBlur_7_10945"
+                        stdDeviation="11"
+                        result="effect1_foregroundBlur_1_535"
                     />
                 </filter>
                 <filter
-                    id="filter1_d_7_10945"
-                    x="0"
-                    y="0"
-                    width="413.345"
-                    height="281"
+                    id="filter2_bi_1_535"
+                    x="-7"
+                    y="-2"
+                    width="122"
+                    height="80"
                     filterUnits="userSpaceOnUse"
                     colorInterpolationFilters="sRGB"
                 >
                     <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feGaussianBlur
+                        in="BackgroundImageFix"
+                        stdDeviation="3.5"
+                    />
+                    <feComposite
+                        in2="SourceAlpha"
+                        operator="in"
+                        result="effect1_backgroundBlur_1_535"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_backgroundBlur_1_535"
+                        result="shape"
+                    />
                     <feColorMatrix
                         in="SourceAlpha"
                         type="matrix"
                         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
                         result="hardAlpha"
                     />
-                    <feOffset dx="10" dy="2" />
-                    <feGaussianBlur stdDeviation="15" />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="4" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
                     <feColorMatrix
                         type="matrix"
-                        values="0 0 0 0 0.258824 0 0 0 0 0.627451 0 0 0 0 0.941176 0 0 0 0.596 0"
+                        values="0 0 0 0 0 0 0 0 0 0.82 0 0 0 0 1 0 0 0 0.25 0"
                     />
                     <feBlend
                         mode="normal"
-                        in2="BackgroundImageFix"
-                        result="effect1_dropShadow_7_10945"
-                    />
-                    <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="effect1_dropShadow_7_10945"
-                        result="shape"
+                        in2="shape"
+                        result="effect2_innerShadow_1_535"
                     />
                 </filter>
                 <linearGradient
-                    id="paint0_linear_7_10945"
-                    x1="196.698"
-                    y1="28.0024"
-                    x2="299.341"
-                    y2="276.166"
+                    id="paint0_linear_1_535"
+                    x1="79.5"
+                    y1="54.5"
+                    x2="126.227"
+                    y2="-7.27901e-06"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="white" stopOpacity="0.604" />
-                    <stop offset="1" stopColor="white" stopOpacity="0.2" />
+                    <stop offset="0.170077" stopColor="#0082DF" />
+                    <stop
+                        offset="0.538523"
+                        stopColor="#48B2FF"
+                        stopOpacity="0.9"
+                    />
+                    <stop offset="1" stopColor="#3BADFF" stopOpacity="0" />
+                </linearGradient>
+                <linearGradient
+                    id="paint1_linear_1_535"
+                    x1="56"
+                    y1="94.5"
+                    x2="96.5"
+                    y2="5"
+                    gradientUnits="userSpaceOnUse"
+                >
+                    <stop stopColor="#0082DF" />
+                    <stop
+                        offset="0.299998"
+                        stopColor="#48B2FF"
+                        stopOpacity="0.75"
+                    />
+                    <stop offset="1" stopColor="#3BADFF" stopOpacity="0" />
                 </linearGradient>
             </defs>
         </svg>

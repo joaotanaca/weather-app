@@ -7,7 +7,7 @@ import { observer } from "mobx-react";
 
 const Navbar = () => {
     return (
-        <div className="w-full px-2 3xl:px-0 shadow-md dark:shadow-none">
+        <div className="w-full px-2 3xl:px-0 shadow-md dark:shadow-none bg-white dark:bg-transparent">
             <div className="mx-auto container py-4 3xl:max-w-[1440px] flex justify-between">
                 <Link
                     to="/forecasts"
@@ -16,7 +16,7 @@ const Navbar = () => {
                     <Icon name="sun_clear" size={45} />
                     Weather
                 </Link>
-                <Switcher value={theme.switch} toggle={theme.toogleTheme} />
+                <Switcher className="flex items-center" value={theme.switch} toggle={theme.toogleTheme} />
             </div>
         </div>
     );

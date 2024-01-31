@@ -1,9 +1,18 @@
 import React from "react";
-import Icon from "../../components/atom/icon";
-import theme from "../../store/theme";
+import Card from "../../components/molecules/WeatherCard";
+import forecasts from "../../store/forecasts";
 
 const Forecast: React.FC = () => {
-    return <Icon name="wind_rain" size={100} />;
+    return (
+        <div>
+            <Card
+                name="São Vicente"
+                temperature={40}
+                weatherCode="2"
+                handleClick={forecasts.toggleScale}
+            />
+        </div>
+    );
 };
 
 export default Forecast;

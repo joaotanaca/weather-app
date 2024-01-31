@@ -4,68 +4,109 @@ import { IconProps } from "..";
 const SunClear = ({ size = 12, className }: IconProps) => {
     return (
         <svg
-            className={className}
-            width={size * 1.048}
-            height={size}
-            viewBox="0 0 246 258"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className={className}
+            width={size}
+            height={size}
+            viewBox="0 0 110 110"
+            fill="none"
         >
-            <g filter="url(#filter0_f_7_10853)">
-                <path
-                    d="M124.446 253.754C189.023 253.754 241.374 201.138 241.374 136.233C241.374 71.3283 189.023 18.7124 124.446 18.7124C59.8684 18.7124 7.51794 71.3283 7.51794 136.233C7.51794 201.138 59.8684 253.754 124.446 253.754Z"
-                    fill="#FA9E42"
+            <g filter="url(#filter0_ddi_1_771)">
+                <circle
+                    cx="55"
+                    cy="55"
+                    r="32"
+                    fill="url(#paint0_linear_1_771)"
                 />
-                <g filter="url(#filter1_f_7_10853)">
-                    <path
-                        d="M115.997 119.521C154.858 98.88 176.594 63.7579 164.545 41.0736C152.496 18.3893 111.226 16.7327 72.3645 37.3736C33.5033 58.0146 11.7674 93.1366 23.816 115.821C35.8647 138.505 77.1353 140.162 115.997 119.521Z"
-                        fill="#F8E36F"
-                    />
-                </g>
             </g>
             <defs>
                 <filter
-                    id="filter0_f_7_10853"
-                    x="3.51794"
-                    y="14.7124"
-                    width="241.856"
-                    height="243.042"
+                    id="filter0_ddi_1_771"
+                    x="7"
+                    y="7"
+                    width="96"
+                    height="96"
                     filterUnits="userSpaceOnUse"
                     colorInterpolationFilters="sRGB"
                 >
                     <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="8" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.992157 0 0 0 0 0.773882 0 0 0 0 0 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_1_771"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="5.5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.992157 0 0 0 0 0.772549 0 0 0 0 0 0 0 0 0.45 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_dropShadow_1_771"
+                        result="effect2_dropShadow_1_771"
+                    />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
-                        in2="BackgroundImageFix"
+                        in2="effect2_dropShadow_1_771"
                         result="shape"
                     />
-                    <feGaussianBlur
-                        stdDeviation="2"
-                        result="effect1_foregroundBlur_7_10853"
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-1" dy="3" />
+                    <feGaussianBlur stdDeviation="2.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.9 0 0 0 0 0 0 0 0 0.35 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect3_innerShadow_1_771"
                     />
                 </filter>
-                <filter
-                    id="filter1_f_7_10853"
-                    x="0.492065"
-                    y="2.91455"
-                    width="187.377"
-                    height="151.065"
-                    filterUnits="userSpaceOnUse"
-                    colorInterpolationFilters="sRGB"
+                <linearGradient
+                    id="paint0_linear_1_771"
+                    x1="55"
+                    y1="23"
+                    x2="55"
+                    y2="87"
+                    gradientUnits="userSpaceOnUse"
                 >
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        result="shape"
-                    />
-                    <feGaussianBlur
-                        stdDeviation="10"
-                        result="effect1_foregroundBlur_7_10853"
-                    />
-                </filter>
+                    <stop stopColor="#FDC500" />
+                    <stop offset="1" stopColor="#FD8900" />
+                </linearGradient>
             </defs>
         </svg>
     );

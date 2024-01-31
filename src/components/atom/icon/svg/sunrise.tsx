@@ -41,8 +41,8 @@ const Sunrise = ({ size = 12, className }: IconProps) => {
                     <path
                         d="M9.5 151.935H127.063L154.927 133.325L183.5 151.935H297.5"
                         stroke="#D0D0D0"
-                        stroke-width="10"
-                        stroke-linecap="round"
+                        strokeWidth="10"
+                        strokeLinecap="round"
                     />
                 </g>
             </g>
@@ -54,9 +54,9 @@ const Sunrise = ({ size = 12, className }: IconProps) => {
                     width="306"
                     height="132.687"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -75,9 +75,9 @@ const Sunrise = ({ size = 12, className }: IconProps) => {
                     width="181.639"
                     height="145.504"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                 >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                         mode="normal"
                         in="SourceGraphic"
