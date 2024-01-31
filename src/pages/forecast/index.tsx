@@ -1,11 +1,11 @@
 import React from "react";
-import Card from "../../components/molecules/WeatherCard";
+import WeatherCard from "../../components/molecules/WeatherCard";
 import forecasts from "../../store/forecasts";
 
-const Forecast: React.FC = () => {
+const Forecast = () => {
     return (
         <div>
-            <Card
+            <WeatherCard
                 name="São Vicente"
                 temperature={40}
                 weatherCode="2"

@@ -1,4 +1,4 @@
-import { makeAutoObservable } from "mobx";
+import { action, makeObservable, observable } from "mobx";
 
 export type TScaleTemperature = "fahrenheit" | "celsius";
 
@@ -7,7 +7,13 @@ class Forecasts {
     scaleTemperature: TScaleTemperature = "celsius";
 
     constructor() {
-        makeAutoObservable(this);
+        makeObservable(this, {
+            forecasts: observable,
+            scaleTemperature: observable,
+            addForecast: action.bound,
+            removeForecast: action.bound,
+            toggleScale: action.bound,
+        });
     }
 
     toggleScale = () => {

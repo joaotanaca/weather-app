@@ -1,9 +1,13 @@
-import { makeAutoObservable } from "mobx";
+import { action, computed, makeObservable, observable } from "mobx";
 
 class Theme {
     switch: boolean = false;
     constructor() {
-        makeAutoObservable(this);
+        makeObservable(this, {
+            switch: observable,
+            toogleTheme: action.bound,
+            theme: computed,
+        });
     }
 
     toogleTheme = () => {
