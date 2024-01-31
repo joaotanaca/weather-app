@@ -1,9 +1,8 @@
 import React from "react";
-
-// import { Container } from './styles';
+import AddLocation from "../../components/organisms/AddLocation";
 
 const AddForecast: React.FC = () => {
-    return <div />;
+    return <AddLocation />;
 };
 
 export default AddForecast;

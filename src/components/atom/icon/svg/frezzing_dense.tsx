@@ -4,6 +4,7 @@ import { IconProps } from "..";
 const FrezzingDense = ({ size = 12, className }: IconProps) => {
     return (
         <svg
+            className={className}
             width={size}
             height={size * 0.96}
             viewBox="0 0 110 106"

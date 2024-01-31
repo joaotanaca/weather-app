@@ -13,7 +13,6 @@ class Theme {
     toogleTheme = () => {
         this.switch = !this.switch;
         document.documentElement.classList.toggle("dark");
-        return this;
     };
 
     get theme() {

@@ -4,6 +4,7 @@ import { IconProps } from "..";
 const WindSnow = ({ size = 12, className }: IconProps) => {
     return (
         <svg
+            className={className}
             width={size}
             height={size * 0.9603}
             viewBox="0 0 126 121"

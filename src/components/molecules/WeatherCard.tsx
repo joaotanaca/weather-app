@@ -3,7 +3,7 @@ import { TbReload } from "react-icons/tb";
 import Icon from "../atom/icon";
 import { observer } from "mobx-react";
 import forecasts from "../../store/forecasts";
-import convertCelsiusToFahreneit from "../helper/convertCelsiusToFahreneit";
+import convertCelsiusToFahreneit from "../../helpers/convertCelsiusToFahreneit";
 type TCard = {
     name: string;
     weatherCode: string;
@@ -27,16 +27,22 @@ const Card = ({ name, temperature: temp, weatherCode, handleClick }: TCard) => {
         setRefresh(true);
         setTimeout(() => {
             setRefresh(false);
-        }, 750);
+        }, 500);
     }, []);
 
     return (
-        <article className="max-w-60 flex flex-col items-center gap-5 p-6 rounded-[20px] backdrop-blur-[34px]  shadow-md dark:bg-[#1B1B1D] bg-[#C9E5FF] text-[#296399] dark:text-white font-nunito-sans">
+        <article
+            className="w-60 flex flex-col items-center gap-5 p-6 
+        rounded-[20px] backdrop-blur-[34px] 
+        shadow-md hover:shadow-md hover:border-[#296399] hover:dark:border-white border-[#C9E5FF] dark:border-[#1B1B1D] border-[1px] 
+        dark:bg-[#1B1B1D] bg-[#C9E5FF] text-[#296399] dark:text-white 
+        font-nunito-sans transition-all cursor-pointer"
+        >
             <header className="w-full flex justify-between text-lg font-semibold">
                 {name}
                 <button
                     className={
-                        refresh ? "animate-[spin_375ms_linear_infinite]" : ""
+                        refresh ? "animate-[spin_500ms_ease_infinite]" : ""
                     }
                     onClick={handleRefresh}
                 >

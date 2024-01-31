@@ -4,6 +4,7 @@ import { IconProps } from "..";
 const FrezzingDrizzle = ({ size = 12, className }: IconProps) => {
     return (
         <svg
+            className={className}
             width={size}
             height={size * 0.931}
             viewBox="0 0 116 108"

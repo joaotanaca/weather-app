@@ -1,8 +1,8 @@
 import { WeatherApiResponse } from "@openmeteo/sdk/weather-api-response";
-import http from "../http";
+import { forecastAPI } from "../http";
 
 async function today(latitude: string | number, longitude: string | number) {
-    return await http.get<WeatherApiResponse>("forecast", {
+    return await forecastAPI.get<WeatherApiResponse>("forecast", {
         params: {
             latitude,
             longitude,
@@ -13,7 +13,7 @@ async function today(latitude: string | number, longitude: string | number) {
 }
 
 async function daily(latitude: string | number, longitude: string | number) {
-    return await http.get<WeatherApiResponse>("forecast", {
+    return await forecastAPI.get<WeatherApiResponse>("forecast", {
         params: {
             latitude,
             longitude,
