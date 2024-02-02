@@ -70,7 +70,7 @@ class Forecasts {
             const forecastData = {
                 ...forecastSelect,
                 ...data.current,
-            } as TForecast;
+                } as TForecast;
 
             this.forecasts[index] = forecastData;
             secureLocalStorage.set("forecasts", this.forecasts);

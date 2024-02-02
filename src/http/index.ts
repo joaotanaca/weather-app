@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const BASE_URL_FORECAST = "https://api.open-meteo.com/v1";
-const BASE_URL_GEOLOCATION = "http://api.openweathermap.org/geo/1.0";
+const BASE_URL_GEOLOCATION = "https://api.openweathermap.org/geo/1.0";
 
 export const forecastAPI = axios.create({ baseURL: BASE_URL_FORECAST });
 

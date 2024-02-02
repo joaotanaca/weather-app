@@ -9,7 +9,7 @@ import {
 import "./index.css";
 import Template from "./components/Template";
 import Forecast from "./pages/forecast";
-import AddForecast from "./pages/forecast/add";
+import AddForecast from "./pages/add-forecast";
 
 const router = createBrowserRouter(
     createRoutesFromElements([

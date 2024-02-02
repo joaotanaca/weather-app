@@ -14,7 +14,6 @@ const WeatherCard = ({
     name,
     temperature,
     className,
-    weatherCode,
     handleRefresh,
 }: TCard) => {
     const [refresh, setRefresh] = useState(false);
