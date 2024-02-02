@@ -1,23 +1,127 @@
-import React, { useRef } from "react";
-import InputGroupLocation from "../molecules/InputGroupLocation";
-import Input from "../atom/Input";
+import React, { useCallback, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { observer } from "mobx-react";
+import { FiArrowLeft } from "react-icons/fi";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import InputGroupLocation from "../molecules/InputGroupLocation";
 import city from "../../store/city";
+import forecasts from "../../store/forecasts";
+import CitiesCards from "./CitiesCards";
+import Button from "../atom/Button";
+import Alert from "../molecules/Alert";
 
 const AddLocation = () => {
-    const locationRef = useRef<{ location: { lat: string; long: string } }>(
-        null,
-    );
+    const navigate = useNavigate();
+    const [step, setStep] = useState<0 | 1>(0);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
+
+    const handleAddLocation = useCallback(async () => {
+        if (!city.citySelected.country) return;
+        try {
+            setLoading(true);
+            await forecasts.addForecast();
+            navigate("/forecasts");
+        } catch (err) {
+            console.error((err as any).message);
+        }
+    }, []);
+
+    const handlePreviousStep = useCallback(() => {
+        city.resetCitySelected();
+        city.cities = [];
+        setStep(0);
+    }, []);
+
+    const handleNextStep = useCallback(async () => {
+        if (step) {
+            handleAddLocation();
+        } else if (
+            city.citySelected.name ||
+            (city.citySelected.lat && city.citySelected.lon)
+        ) {
+            setLoading(true);
+            await city.search(city.citySelected.name);
+            setStep(1);
+            setLoading(false);
+        } else {
+            setError(true);
+            setTimeout(() => {
+                setError(false);
+            }, 2000);
+        }
+    }, [
+        city.citySelected.name,
+        city.citySelected.lat,
+        city.citySelected.lon,
+        setStep,
+        setLoading,
+    ]);
 
     return (
-        <div className="font-nunito-sans flex flex-col gap-4 bg-white rounded-2xl px-7 py-10 w-full max-w-2xl mx-auto shadow-[-2px_4px_12px_0px_rgba(24,24,24,0.08)] border-2">
-            <InputGroupLocation ref={locationRef} />
-            <div className="my-4 w-1/3 bg-slate-600 bg-opacity-25 h-[1px] mx-auto" />
-            <Input
-                placeholder="Cidade"
-                name="city"
-                onChange={(event) => city.search(event.currentTarget.value)}
-            />
+        <div className="flex flex-col gap-4 md:bg-white md:dark:bg-[#1B1B1D] rounded-lg px-6 py-5 w-full max-w-2xl mx-auto md:shadow-card">
+            <div
+                className={`w-full overflow-hidden relative pt-2 ${
+                    !step ? "h-80 md:h-44" : "h-[540px]"
+                }`}
+            >
+                <div
+                    className={`w-[200%] flex justify-between transition-all duration-500 absolute ${
+                        !step ? "left-0" : "-left-full"
+                    }`}
+                >
+                    <div className="w-[49%] ml-1">
+                        <InputGroupLocation />
+                    </div>
+                    <div className="w-[49%] mr-1 flex flex-col gap-2">
+                        {city.cities.length ? (
+                            <CitiesCards cities={city.cities} />
+                        ) : null}
+                    </div>
+                </div>
+            </div>
+            {error ? (
+                <Alert
+                    color="critical"
+                    title="Campo cidade ou longitude e latitude obrigatórios!"
+                />
+            ) : null}
+            <div
+                className={`flex ${
+                    step ? "justify-between" : "justify-end"
+                }  mt-6`}
+            >
+                {step ? (
+                    <Button color="transparent" onClick={handlePreviousStep}>
+                        <FiArrowLeft size={20} /> Voltar
+                    </Button>
+                ) : null}
+                <div className="flex gap-3">
+                    <Button
+                        color="transparent"
+                        onClick={() => {
+                            city.resetCitySelected();
+                            navigate("/forecasts");
+                        }}
+                    >
+                        Cancelar
+                    </Button>
+
+                    <Button
+                        color={step ? "positive" : "primary"}
+                        disabled={!city.citySelected.id && !!step}
+                        onClick={handleNextStep}
+                    >
+                        {loading ? (
+                            <AiOutlineLoading3Quarters className="animate-spin" />
+                        ) : !step ? (
+                            "Proximo"
+                        ) : (
+                            "Adicionar"
+                        )}
+                    </Button>
+                </div>
+            </div>
         </div>
     );
 };

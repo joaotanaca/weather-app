@@ -12,15 +12,21 @@ type TProps = DetailedHTMLProps<
 const Input = ({ className, label, containerClassname, ...props }: TProps) => {
     return (
         <div
-            className={`flex flex-col gap-2 font-nunito-sans ${containerClassname}`}
+            className={`flex flex-col gap-2 text-neutral-900  ${containerClassname}`}
         >
             {label ? (
-                <label htmlFor={props.name} className="font-semibold">
+                <label
+                    htmlFor={props.name}
+                    className="font-semibold dark:text-white"
+                >
                     {label}
                 </label>
             ) : null}
             <input
-                className={`rounded-lg border-[1px] placeholder:text-[#8B849B] placeholder:font-semibold placeholder:text-base border-[#1D2433A6] focus-within:border-[#2F6FED] outline-none py-2 px-[10px] transition-all ${className}`}
+                className={`rounded-[4px] border-[1px] border-neutral-400 placeholder:text-neutral-500 placeholder:font-normal placeholder:text-base 
+                focus-within:border-primary-600 focus-within:shadow-input outline-none py-2 px-[10px] transition-all 
+                dark:bg-[#9e9e9e40] dark:text-[#C4C4C4] dark:border-0 dark:placeholder:text-[#707070] ${className}
+                `}
                 {...props}
             />
         </div>
