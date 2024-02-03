@@ -15,7 +15,7 @@ const Template: React.FC = () => {
     return (
         <>
             <Navbar />
-            <div className="mx-auto container py-8 3xl:max-w-[1440px]">
+            <div className="mx-auto container py-2 md:py-8 3xl:max-w-[1440px]">
                 <Outlet />
             </div>
         </>

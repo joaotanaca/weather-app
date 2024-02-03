@@ -60,9 +60,9 @@ const InputGroupLocation = () => {
                 <div className="items-end hidden md:flex">{buttonLocation}</div>
             </div>
             <div className="my-4 w-4/5 md:w-1/3 bg-slate-600 dark:bg-slate-400 dark:h-[2px] bg-opacity-25 h-[1px] mx-auto" />
-            <div className="flex gap-2 items-center">
+            <div className="grid grid-cols-12 gap-2 items-center">
                 <Input
-                    containerClassname="w-full"
+                    containerClassname="col-span-10 md:col-span-12"
                     placeholder="Cidade"
                     name="city"
                     value={city.citySelected.name}
@@ -73,7 +73,7 @@ const InputGroupLocation = () => {
                         )
                     }
                 />
-                <div className="block md:hidden -mb-1.5">{buttonLocation}</div>
+                <div className="flex justify-center md:hidden -mb-1.5 col-span-2">{buttonLocation}</div>
             </div>
         </div>
     );

@@ -61,14 +61,12 @@ const AddLocation = () => {
     return (
         <div className="flex flex-col gap-4 md:bg-white md:dark:bg-[#1B1B1D] rounded-lg px-6 py-5 w-full max-w-2xl mx-auto md:shadow-card">
             <div
-                className={`w-full overflow-hidden relative pt-2 ${
-                    !step ? "h-80 md:h-44" : "h-[540px]"
-                }`}
+                className={`w-full overflow-hidden relative pt-2 ${!step ? "h-80 md:h-44" : "h-72 min-[340px]:h-[360px] sm:h-[420px] md:h-[540px] overflow-y-auto"
+                    }`}
             >
                 <div
-                    className={`w-[200%] flex justify-between transition-all duration-500 absolute ${
-                        !step ? "left-0" : "-left-full"
-                    }`}
+                    className={`w-[200%] flex justify-between transition-all duration-500 absolute ${!step ? "left-0" : "-left-full"
+                        }`}
                 >
                     <div className="w-[49%] ml-1">
                         <InputGroupLocation />
@@ -87,9 +85,8 @@ const AddLocation = () => {
                 />
             ) : null}
             <div
-                className={`flex ${
-                    step ? "justify-between" : "justify-end"
-                }  mt-6`}
+                className={`flex ${step ? "justify-between" : "justify-end"
+                    }  mt-6`}
             >
                 {step ? (
                     <Button color="transparent" onClick={handlePreviousStep}>
@@ -98,6 +95,7 @@ const AddLocation = () => {
                 ) : null}
                 <div className="flex gap-3">
                     <Button
+                        className="hidden md:block"
                         color="transparent"
                         onClick={() => {
                             city.resetCitySelected();

@@ -10,7 +10,7 @@ const Forecast = () => {
         <div className="flex flex-wrap justify-around md:justify-start gap-4">
             <Link
                 to="/add-forecast"
-                className="w-60 h-60 hidden md:flex justify-center items-center gap-5 p-6 rounded-[20px] backdrop-blur-[34px] dark:bg-[#1B1B1D] bg-neutral-100 text-[#60b0fc] border-[1px] border-neutro dark:text-white transition-all cursor-pointer shadow-sm hover:shadow-md hover:-translate-y-1"
+                className="w-60 h-auto hidden md:flex justify-center items-center gap-5 p-6 rounded-[20px] backdrop-blur-[34px] dark:bg-[#1B1B1D] bg-neutral-100 text-[#60b0fc] border-[1px] border-neutro dark:text-white transition-all cursor-pointer shadow-sm hover:shadow-md hover:-translate-y-1"
             >
                 <RiMapPinAddFill size={60} />
             </Link>
