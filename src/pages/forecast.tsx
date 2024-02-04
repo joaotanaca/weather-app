@@ -1,12 +1,12 @@
 import React from "react";
 import { RiMapPinAddFill } from "react-icons/ri";
-import WeatherCard from "../components/organisms/WeatherCard";
-import forecasts from "../store/forecasts";
+import WeatherCard from "@/components/organisms/WeatherCard";
+import forecasts from "@/store/forecasts";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react";
-import { WeatherCode } from "../interface/weatherCode";
+import { WeatherCode } from "@/interface/weatherCode";
 import { FiNavigation } from "react-icons/fi";
-import tailwind from "../constants/colors/tailwind";
+import tailwind from "@/constants/colors/tailwind";
 
 const Forecast = observer(() => {
     return (

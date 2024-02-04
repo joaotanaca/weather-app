@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
-import { CityResponse } from "../../interface/cityResponse";
+import { CityResponse } from "@/interface/cityResponse";
 import ToggleCard from "../molecules/ToggleCard";
-import city, { INITIAL_CITY_TYPE } from "../../store/city";
+import city, { INITIAL_CITY_TYPE } from "@/store/city";
 import { runInAction } from "mobx";
 import { observer } from "mobx-react";
 

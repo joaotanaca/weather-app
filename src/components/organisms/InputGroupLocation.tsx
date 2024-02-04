@@ -2,7 +2,7 @@ import React, { useCallback, useMemo } from "react";
 import Input from "../atom/Input";
 import { FiMapPin } from "react-icons/fi";
 import { observer } from "mobx-react";
-import city from "../../store/city";
+import city from "@/store/city";
 
 const InputGroupLocation = observer(() => {
     const handleGetLocation = useCallback(() => {
@@ -50,7 +50,7 @@ const InputGroupLocation = observer(() => {
                     name="longitude"
                     placeholder="Longitude"
                     value={city.citySelected.lon}
-                    onChange={(event) =>
+                    onChange={(event: { currentTarget: { value: unknown; }; }) =>
                         city.handleUpdateCitySelected(
                             "lon",
                             event.currentTarget.value,

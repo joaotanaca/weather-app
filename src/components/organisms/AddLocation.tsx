@@ -5,12 +5,12 @@ import { observer } from "mobx-react";
 import { FiArrowLeft, FiNavigation } from "react-icons/fi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import InputGroupLocation from "./InputGroupLocation";
-import city from "../../store/city";
-import forecasts from "../../store/forecasts";
+import city from "@/store/city";
+import forecasts from "@/store/forecasts";
 import CitiesCards from "./CitiesCards";
 import Button from "../atom/Button";
 import Alert from "../molecules/Alert";
-import tailwind from "../../constants/colors/tailwind";
+import tailwind from "@/constants/colors/tailwind";
 import { AxiosError } from "axios";
 
 const AddLocation = observer(() => {

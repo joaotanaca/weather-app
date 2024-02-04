@@ -1,5 +1,5 @@
 import { WeatherApiResponse } from "@openmeteo/sdk/weather-api-response";
-import { forecastAPI } from "../http";
+import { forecastAPI } from "@/http";
 
 /**
  * The function "today" retrieves the weather forecast current for a given latitude and longitude.

@@ -3,10 +3,10 @@ import Icon, { IconsName } from "../atom/icon";
 import Dropdown from "../molecules/Dropdown";
 import { FiRefreshCcw } from "react-icons/fi";
 import { FiTrash } from "react-icons/fi";
-import forecasts from "../../store/forecasts";
+import forecasts from "@/store/forecasts";
 import { observer } from "mobx-react";
-import weather from "../../constants/weather";
-import { WeatherCode } from "../../interface/weatherCode";
+import weather from "@/constants/weather";
+import { WeatherCode } from "@/interface/weatherCode";
 
 type TWeatherCard = {
     id: string

@@ -1,5 +1,5 @@
-import { geolocationAPI } from "../http";
-import type { CityResponse } from "../interface/cityResponse";
+import { geolocationAPI } from "@/http";
+import type { CityResponse } from "@/interface/cityResponse";
 
 /**
  * The function `search` uses the geolocation API to search for cities based on a given query.

@@ -1,4 +1,4 @@
-import { CityResponse } from "../interface/cityResponse";
+import { CityResponse } from "@/interface/cityResponse";
 import { v4 as uuid } from "uuid";
 
 /**

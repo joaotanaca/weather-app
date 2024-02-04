@@ -1,5 +1,5 @@
 import { action, computed, makeObservable, observable } from "mobx";
-import secureLocalStorage from "../lib/secureLocalStorage";
+import secureLocalStorage from "@/lib/secureLocalStorage";
 
 type ThemeType = "dark" | "light";
 class Theme {

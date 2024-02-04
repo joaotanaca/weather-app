@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import theme from "../../store/theme";
+import theme from "@/store/theme";
 import { observer } from "mobx-react";
 import { FiMoon, FiSun } from "react-icons/fi";
 

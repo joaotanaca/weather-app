@@ -1,8 +1,8 @@
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { AxiosError } from "axios";
-import { CityResponse } from "../interface/cityResponse";
-import city from "../services/city";
-import filterCities from "../helpers/filterCities";
+import { CityResponse } from "@/interface/cityResponse";
+import city from "@/services/city";
+import filterCities from "@/helpers/filterCities";
 export type INITIAL_CITY_TYPE = typeof INITIAL_CITY;
 
 const INITIAL_CITY = {

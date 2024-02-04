@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from "react";
-import colors from "../../constants/colors/button";
+import colors from "@/constants/colors/button";
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
     color?: keyof typeof colors;

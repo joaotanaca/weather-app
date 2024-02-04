@@ -4,7 +4,7 @@ import { FiHome } from "react-icons/fi";
 import { MdOutlineAddLocationAlt } from "react-icons/md";
 import DarkModeSwitcher from '../organisms/DarkModeSwitcher';
 import Icon from '../atom/icon';
-import city from '../../store/city';
+import city from '@/store/city';
 
 const Navbar = () => {
     const { pathname } = useLocation()

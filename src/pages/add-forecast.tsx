@@ -1,5 +1,5 @@
 import React from "react";
-import AddLocation from "../components/organisms/AddLocation";
+import AddLocation from "@/components/organisms/AddLocation";
 
 const AddForecast = () => {
     return <AddLocation />;
