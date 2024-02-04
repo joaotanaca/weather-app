@@ -23,7 +23,7 @@ class Theme {
     value stored in the secure local storage. */
   validateTheme = () => {
     this.theme = (secureLocalStorage.get('theme') || 'light') as ThemeType;
-    if (this.theme === 'dark') document.documentElement.classList.toggle('dark');
+    if (this.theme === 'dark') document.documentElement.classList.add('dark');
   };
 
   get isDark() {
