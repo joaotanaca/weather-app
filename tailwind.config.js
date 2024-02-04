@@ -52,6 +52,7 @@ export default {
             },
             boxShadow: {
                 card: "0px 16px 32px 0px rgba(29, 33, 45, 0.10), 0px 1px 4px 0px rgba(29, 33, 45, 0.15), 0px 0px 1px 0px rgba(29, 33, 45, 0.20)",
+                menu: "0px 0px 1px rgba(29, 33, 45, 0.2), 0px 1px 4px rgba(29, 33, 45, 0.15), 0px 16px 32px rgba(29, 33, 45, 0.1)",
                 input: "0px 0px 0px 3px rgba(0, 122, 255, 0.30), 0px 0px 0px 1px rgba(255, 255, 255, 0.60)",
                 "t-sm": "0 -1px 2px 0 rgba(0, 0, 0, 0.05)",
                 "t-md": "0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
