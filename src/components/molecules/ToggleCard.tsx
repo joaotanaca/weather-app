@@ -5,13 +5,15 @@ type ToggleCardProps = {
   active?: boolean;
   titleDetails?: string;
   description: string;
+  ariaLabel: string;
   onClick?: () => void;
 };
 
-const ToggleCard = ({ active, title, titleDetails, description, onClick }: ToggleCardProps) => {
+const ToggleCard = ({ active, ariaLabel, title, titleDetails, description, onClick }: ToggleCardProps) => {
   return (
     <button
       onClick={onClick}
+      aria-label={ariaLabel}
       className={`${
         active ? 'border-primary-600' : ''
       } border-2 p-5 flex flex-col sm:gap-3 rounded-[8px] cursor-pointer select-none transition-all`}

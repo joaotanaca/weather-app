@@ -13,6 +13,7 @@ const Navbar = () => {
     <div className="fixed md:static bottom-0 left-0 z-10 w-full 3xl:px-0 shadow-md dark:shadow-none bg-white dark:bg-[#111015] dark:border-t-1 dark:border-neutral-600 font-nunito-sans">
       <div className="flex gap-2 w-full p-5 shadow-t-2xl dark:shadow-none mx-auto container py-4 3xl:max-w-[1440px] justify-between  font-nunito-sans">
         <Link
+          aria-label="Pagina inicial"
           to="/forecasts"
           onClick={city.resetCitySelected}
           className={`w-full md:w-auto flex flex-col md:flex-row gap-1 items-center justify-center text-sm md:text-lg font-bold ${isHomePage ? 'text-primary-600 md:text-black' : ''}`}
@@ -25,6 +26,7 @@ const Navbar = () => {
           <span className="md:hidden">Home</span>
         </Link>
         <Link
+          aria-label="Pagina para adicionar localizações"
           to={'/add-forecast'}
           className={`w-full md:hidden flex flex-col gap-1 items-center justify-center text-sm font-bold ${!isHomePage ? 'text-primary-600' : ''}`}
         >

@@ -19,6 +19,7 @@ const ItemMenu = ({ title, icon, onClick, className }: ItemMenu) => {
     <button
       onClick={handleOnClick}
       className={`${className} ${!className?.includes('hover:bg') && 'hover:bg-neutral-300 dark:text-white'} ${!className?.includes('hover:text-') && 'hover:dark:text-neutral-900'} p-2 w-full text-neutral-900 dark:text-white flex items-center gap-1 rounded-[4px] text-base transition-all`}
+      aria-label="Item do menu"
       type="button"
     >
       <div className="min-w-4 min-h-4">{IconMenu}</div>

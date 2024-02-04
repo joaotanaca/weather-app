@@ -14,7 +14,7 @@ const Dropdown = ({ className, options }: DropdownProps) => {
 
   return (
     <div className="relative">
-      <Button className={className} onClick={() => menuRef?.open()} color="transparent">
+      <Button aria-label='Menu de opções da localização' className={className} onClick={() => menuRef?.open()} color="transparent">
         <FiMoreVertical />
       </Button>
       <Menu

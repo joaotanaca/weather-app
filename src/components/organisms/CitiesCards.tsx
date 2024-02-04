@@ -11,6 +11,7 @@ const CitiesCards = observer(({ cities }: { cities: CityResponse[] }) => {
       cities.map((currentCity) => (
         <ToggleCard
           key={currentCity.id}
+          ariaLabel='informações da cidade'
           active={city.citySelected.id === currentCity.id}
           onClick={() => runInAction(() => (city.citySelected = currentCity as unknown as INITIAL_CITY_TYPE))}
           title={currentCity.name}

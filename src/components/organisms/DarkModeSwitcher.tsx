@@ -9,6 +9,7 @@ const DarkModeSwitcher = observer(() => {
   return (
     <button
       className="w-full md:w-auto cursor-pointer flex flex-col items-center justify-center"
+      aria-label='Botão para troca de tema'
       onClick={theme.toogleTheme}
     >
       <div className="w-9 h-9 flex items-center overflow-hidden relative">
