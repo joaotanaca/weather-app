@@ -48,15 +48,8 @@ class City {
         }
     };
 
-    handleUpdateCitySelected = (
-        key: "city" | "name" | "lat" | "lon" | "country" | "state" | "all",
-        value: any,
-    ) => {
-        if (key === "all") {
-            this.citySelected = value as INITIAL_CITY_TYPE;
-        } else {
-            this.citySelected = { ...this.citySelected, [key]: value };
-        }
+    handleUpdateCitySelected = (key: keyof INITIAL_CITY_TYPE, value: any) => {
+        this.citySelected = { ...this.citySelected, [key]: value };
     };
 
     resetCitySelected = () => {
