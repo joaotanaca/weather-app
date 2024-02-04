@@ -18,6 +18,8 @@ class Theme {
         document.documentElement.classList.toggle("dark");
     };
 
+    /* The `validateTheme` method is responsible for validating and setting the theme based on the
+    value stored in the secure local storage. */
     validateTheme = () => {
         this.theme = (secureLocalStorage.get("theme") || "light") as ThemeType;
         if (this.theme === "dark")

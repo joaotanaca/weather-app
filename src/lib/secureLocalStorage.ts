@@ -10,6 +10,7 @@ const CYPHER_DECRYPT = crypto.AES.decrypt;
 const options: any = { iv: { sigBytes: 16, words: [0, 0, 0, 0] } };
 
 export default {
+    /* The `get` function is retrieving a value from the local storage. */
     get(name: string) {
         const nameEcrypt = crypto.HmacSHA1(name, HASH);
         let value: string | crypto.lib.WordArray | null = localStorage.getItem(
@@ -22,6 +23,7 @@ export default {
         value = value.toString(crypto.enc.Utf8);
         return value;
     },
+    /* The `set` function is used to store a value in the local storage. */
     set(name: string, value: unknown) {
         const nameEcrypt = crypto.HmacSHA1(name, HASH);
         let valueEcrypt =
@@ -29,6 +31,7 @@ export default {
         valueEcrypt = CYPHER_ENCRYPT(valueEcrypt, HASH, options).toString();
         localStorage.setItem(`${PREFIX}.${nameEcrypt}`, valueEcrypt);
     },
+    /* The `remove` function is used to remove a value from the local storage. */
     remove(name: string) {
         const nameEcrypt = crypto.HmacSHA1(name, HASH);
         localStorage.removeItem(`${PREFIX}.${nameEcrypt}`);
