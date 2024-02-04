@@ -26,7 +26,7 @@ const WeatherCard = ({
 
     return (
         <article
-            className={`${className} w-60 flex flex-col justify-between items-center gap-5 p-5 px-6 rounded-xl dark:bg-[#1B1B1D] bg-neutral-100 text-neutral-700 dark:text-white transition-all shadow-sm hover:shadow-md md:hover:-translate-y-1 md:hover:text-primary-600 border-1 md:hover:border-primary-600 border-neutral-700 md:border-none md:border-0`}
+            className={`${className} w-60 flex flex-col justify-between items-center gap-5 p-5 px-6 rounded-xl dark:bg-[#1B1B1D] bg-neutral-100 text-neutral-700 dark:text-white transition-all shadow-sm hover:shadow-md md:hover:-translate-y-1 md:hover:text-primary-600 border-1 md:hover:border-primary-600 border-neutral-300 md:border-none md:border-0`}
         >
             <header className="w-full flex justify-between text-lg font-semibold">
                 {name}
