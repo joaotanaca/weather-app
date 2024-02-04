@@ -4,10 +4,10 @@ import { FiMapPin } from "react-icons/fi";
 import { observer } from "mobx-react";
 import city from "../../store/city";
 
-const InputGroupLocation = () => {
+const InputGroupLocation = observer(() => {
     const handleGetLocation = useCallback(() => {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
+            navigator.geolocation.getCurrentPosition((position) => {
                 const { latitude, longitude } = position.coords;
                 city.handleUpdateCitySelected("name", "");
                 city.handleUpdateCitySelected("lat", latitude);
@@ -77,6 +77,6 @@ const InputGroupLocation = () => {
             </div>
         </div>
     );
-};
+});
 
-export default observer(InputGroupLocation);
+export default InputGroupLocation;

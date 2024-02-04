@@ -1,7 +1,8 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { useCallback, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { observer } from "mobx-react";
-import { FiArrowLeft } from "react-icons/fi";
+import { FiArrowLeft, FiNavigation } from "react-icons/fi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import InputGroupLocation from "./InputGroupLocation";
 import city from "../../store/city";
@@ -9,8 +10,10 @@ import forecasts from "../../store/forecasts";
 import CitiesCards from "./CitiesCards";
 import Button from "../atom/Button";
 import Alert from "../molecules/Alert";
+import tailwind from "../../constants/colors/tailwind";
+import { AxiosError } from "axios";
 
-const AddLocation = () => {
+const AddLocation = observer(() => {
     const navigate = useNavigate();
     const [step, setStep] = useState<0 | 1>(0);
     const [loading, setLoading] = useState(false);
@@ -23,9 +26,9 @@ const AddLocation = () => {
             await forecasts.addForecast();
             navigate("/forecasts");
         } catch (err) {
-            console.error((err as any).message);
+            console.error((err as AxiosError).message);
         }
-    }, []);
+    }, [navigate]);
 
     const handlePreviousStep = useCallback(() => {
         city.resetCitySelected();
@@ -50,13 +53,7 @@ const AddLocation = () => {
                 setError(false);
             }, 2000);
         }
-    }, [
-        city.citySelected.name,
-        city.citySelected.lat,
-        city.citySelected.lon,
-        setStep,
-        setLoading,
-    ]);
+    }, [step, handleAddLocation]);
 
     return (
         <div className="flex flex-col gap-4 md:bg-white md:dark:bg-[#1B1B1D] rounded-lg px-6 py-5 w-full max-w-2xl mx-auto md:shadow-card">
@@ -74,7 +71,12 @@ const AddLocation = () => {
                     <div className="w-[49%] mr-1 flex flex-col gap-2">
                         {city.cities.length ? (
                             <CitiesCards cities={city.cities} />
-                        ) : null}
+                        ) : <div className="flex flex-col items-center justify-center w-full md:hidden gap-2 text-center">
+                            <div className="bg-neutral-200 p-4 rounded-full mb-4">
+                                <FiNavigation className="translate-y-[2px]" size={28} color={tailwind.neutral[600]} />
+                            </div>
+                            <h2 className="text-neutral-900 dark:text-white font-semibold text-2xl">Cidade não encotrada.</h2>
+                        </div>}
                     </div>
                 </div>
             </div>
@@ -122,6 +124,7 @@ const AddLocation = () => {
             </div>
         </div>
     );
-};
+});
 
-export default observer(AddLocation);
+
+export default AddLocation;

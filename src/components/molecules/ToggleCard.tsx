@@ -1,5 +1,4 @@
-import { observer } from "mobx-react";
-import React, { useMemo } from "react";
+import React from "react";
 
 type ToggleCardProps = {
     title: string;
@@ -19,9 +18,8 @@ const ToggleCard = ({
     return (
         <div
             onClick={onClick}
-            className={`${
-                active ? "border-primary-600" : ""
-            } border-2 p-5 flex flex-col sm:gap-3 rounded-[8px] cursor-pointer select-none transition-all`}
+            className={`${active ? "border-primary-600" : ""
+                } border-2 p-5 flex flex-col sm:gap-3 rounded-[8px] cursor-pointer select-none transition-all`}
         >
             <h2 className="font-semibold">
                 {title}
@@ -36,4 +34,4 @@ const ToggleCard = ({
     );
 };
 
-export default observer(ToggleCard);
+export default ToggleCard;

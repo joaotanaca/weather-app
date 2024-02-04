@@ -20,6 +20,7 @@ class City {
 
     constructor() {
         makeObservable(this, {
+            resetCitySelected: true,
             cities: observable,
             citySelected: observable,
             search: action.bound,
@@ -48,7 +49,7 @@ class City {
         }
     };
 
-    handleUpdateCitySelected = (key: keyof INITIAL_CITY_TYPE, value: any) => {
+    handleUpdateCitySelected = (key: keyof INITIAL_CITY_TYPE, value: unknown) => {
         this.citySelected = { ...this.citySelected, [key]: value };
     };
 

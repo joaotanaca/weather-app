@@ -1,11 +1,4 @@
-import {
-    action,
-    computed,
-    makeObservable,
-    observable,
-    runInAction,
-    toJS,
-} from "mobx";
+import { action, makeObservable, observable, runInAction, toJS } from "mobx";
 import forecast from "../services/forecast";
 import secureLocalStorage from "../lib/secureLocalStorage";
 import city from "./city";
@@ -18,7 +11,7 @@ class Forecasts {
     forecasts: TForecast[] = [];
     cityStore: typeof city;
     constructor() {
-        makeObservable(this, {
+        makeObservable(this, { cityStore: true, 
             forecasts: observable,
             addForecast: action.bound,
             removeForecast: action.bound,
@@ -70,7 +63,7 @@ class Forecasts {
             const forecastData = {
                 ...forecastSelect,
                 ...data.current,
-                } as TForecast;
+            } as TForecast;
 
             this.forecasts[index] = forecastData;
             secureLocalStorage.set("forecasts", this.forecasts);

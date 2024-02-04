@@ -1,6 +1,6 @@
 import { FiMoreVertical } from "react-icons/fi";
 
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import Button from "../atom/Button";
 import Menu, { MenuRef, OptionsMenu } from "./Menu";
 

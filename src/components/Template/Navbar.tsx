@@ -18,7 +18,7 @@ const Navbar = () => {
             >
                 {/* Desktop */}
                 <Icon className='hidden md:block' name="sun_clear" size={45} />
-                <span className='hidden md:block'>Weather</span>
+                <span className='hidden md:block dark:text-white'>Weather</span>
                 {/* Mobile */}
                 <FiHome className='md:hidden' size={28} />
                 <span className='md:hidden'>Home</span>

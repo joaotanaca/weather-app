@@ -10,7 +10,7 @@ const Template: React.FC = () => {
     useEffect(() => {
         theme.validateTheme();
         if (pathname === "/") navigate("forecasts");
-    }, []);
+    }, [navigate, pathname]);
 
     return (
         <>

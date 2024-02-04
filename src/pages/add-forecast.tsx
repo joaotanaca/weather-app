@@ -1,7 +1,7 @@
 import React from "react";
 import AddLocation from "../components/organisms/AddLocation";
 
-const AddForecast: React.FC = () => {
+const AddForecast = () => {
     return <AddLocation />;
 };
 

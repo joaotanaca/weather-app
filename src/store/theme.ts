@@ -1,4 +1,4 @@
-import { action, makeObservable, observable } from "mobx";
+import { action, computed, makeObservable, observable } from "mobx";
 import secureLocalStorage from "../lib/secureLocalStorage";
 
 type ThemeType = "dark" | "light";
@@ -9,6 +9,7 @@ class Theme {
             theme: observable,
             toogleTheme: action.bound,
             validateTheme: action.bound,
+            isDark: computed,
         });
     }
 
@@ -25,6 +26,10 @@ class Theme {
         if (this.theme === "dark")
             document.documentElement.classList.toggle("dark");
     };
+
+    get isDark() {
+        return this.theme === "dark";
+    }
 }
 
 export default new Theme();
