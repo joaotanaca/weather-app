@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { observer } from "mobx-react";
 import { FiArrowLeft } from "react-icons/fi";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import InputGroupLocation from "../molecules/InputGroupLocation";
+import InputGroupLocation from "./InputGroupLocation";
 import city from "../../store/city";
 import forecasts from "../../store/forecasts";
 import CitiesCards from "./CitiesCards";

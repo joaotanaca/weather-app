@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiHome } from "react-icons/fi";
 import { MdOutlineAddLocationAlt } from "react-icons/md";
-import DarkModeSwitcher from '../molecules/DarkModeSwitcher';
+import DarkModeSwitcher from '../organisms/DarkModeSwitcher';
 import Icon from '../atom/icon';
 import city from '../../store/city';
 
