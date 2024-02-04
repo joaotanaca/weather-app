@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 html {
-    font-family: "Inter", sans-serif;
-    scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
 .menu.active {
-    display: block;
+  display: block;
 }

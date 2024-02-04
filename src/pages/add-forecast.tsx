@@ -1,8 +1,8 @@
-import React from "react";
-import AddLocation from "@/components/organisms/AddLocation";
+import React from 'react';
+import AddLocation from '@/components/organisms/AddLocation';
 
 const AddForecast = () => {
-    return <AddLocation />;
+  return <AddLocation />;
 };
 
 export default AddForecast;

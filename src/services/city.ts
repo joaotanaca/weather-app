@@ -1,5 +1,5 @@
-import { geolocationAPI } from "@/http";
-import type { CityResponse } from "@/interface/cityResponse";
+import { geolocationAPI } from '@/http';
+import type { CityResponse } from '@/interface/cityResponse';
 
 /**
  * The function `search` uses the geolocation API to search for cities based on a given query.
@@ -8,9 +8,9 @@ import type { CityResponse } from "@/interface/cityResponse";
  * @returns a promise that resolves to an array of CityResponse objects.
  */
 async function search(query: string) {
-    return await geolocationAPI.get<CityResponse[]>("/direct", {
-        params: { q: query },
-    });
+  return await geolocationAPI.get<CityResponse[]>('/direct', {
+    params: { q: query },
+  });
 }
 
 /**
@@ -26,12 +26,12 @@ async function search(query: string) {
  * @returns a promise that resolves to an array of `CityResponse` objects.
  */
 async function getCity(latitude: number, longitude: number) {
-    return await geolocationAPI.get<CityResponse[]>("/reverse", {
-        params: { lat: latitude, lon: longitude },
-    });
+  return await geolocationAPI.get<CityResponse[]>('/reverse', {
+    params: { lat: latitude, lon: longitude },
+  });
 }
 
 export default {
-    search,
-    getCity,
+  search,
+  getCity,
 };

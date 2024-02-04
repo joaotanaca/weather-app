@@ -1,3 +1,3 @@
-import weather from "@/constants/weather";
+import weather from '@/constants/weather';
 
 export type WeatherCode = keyof typeof weather;
