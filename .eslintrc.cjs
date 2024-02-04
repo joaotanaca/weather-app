@@ -1,3 +1,5 @@
+const { ESLint } = require("eslint");
+
 module.exports = {
     root: true,
     env: { browser: true, es2020: true },
@@ -9,7 +11,7 @@ module.exports = {
     ],
     ignorePatterns: ["dist", ".eslintrc.cjs"],
     parser: "@typescript-eslint/parser",
-    plugins: ["react-refresh", "mobx"],
+    plugins: ["react-refresh", "mobx", "@typescript-eslint"],
     rules: {
         "react-refresh/only-export-components": [
             "warn",
@@ -18,7 +20,6 @@ module.exports = {
         "mobx/exhaustive-make-observable": "warn",
         "mobx/unconditional-make-observable": "error",
         "mobx/missing-make-observable": "error",
-        "mobx/missing-observer": "warn",
-        "mobx/no-anonymous-observer": "warn",
+        "mobx/missing-observer": "off",
     },
 };
