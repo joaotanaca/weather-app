@@ -6,3 +6,11 @@ html {
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
 }
+
+.menu {
+    display: none;
+}
+
+.menu.active {
+    display: block;
+}
