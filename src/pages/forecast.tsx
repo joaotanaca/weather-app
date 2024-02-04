@@ -1,6 +1,6 @@
 import React from "react";
 import { RiMapPinAddFill } from "react-icons/ri";
-import WeatherCard from "../components/molecules/WeatherCard";
+import WeatherCard from "../components/organisms/WeatherCard";
 import forecasts from "../store/forecasts";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react";
