@@ -9,7 +9,7 @@ import city from '../../store/city';
 const Navbar = () => {
     const { pathname } = useLocation()
     const isHomePage = useMemo(() => !pathname.includes("add-forecast"), [pathname])
-    return <div className="fixed md:static bottom-0 left-0 z-10 w-full px-2 3xl:px-0 shadow-md dark:shadow-none bg-white dark:bg-[#111015] dark:border-t-1 dark:border-neutral-600 font-nunito-sans">
+    return <div className="fixed md:static bottom-0 left-0 z-10 w-full 3xl:px-0 shadow-md dark:shadow-none bg-white dark:bg-[#111015] dark:border-t-1 dark:border-neutral-600 font-nunito-sans">
         <div className="flex gap-2 w-full p-5 shadow-t-2xl dark:shadow-none mx-auto container py-4 3xl:max-w-[1440px] justify-between  font-nunito-sans">
             <Link
                 to="/forecasts"
