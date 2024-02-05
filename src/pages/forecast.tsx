@@ -18,16 +18,31 @@ const Forecast = observer(() => {
         <RiMapPinAddFill size={60} />
       </Link>
       {forecasts.forecasts.length ? (
-        forecasts.forecasts.map(({ id, name, temperature_2m, country, is_day, weather_code }) => (
-          <WeatherCard
-            key={id}
-            id={id}
-            name={`${name}, ${country}`}
-            temperature={`${temperature_2m}°C`}
-            weatherCode={weather_code as WeatherCode}
-            isDay={Boolean(is_day)}
-          />
-        ))
+        forecasts.forecasts.map(
+          ({
+            id,
+            name,
+            temperature_2m,
+            country,
+            is_day,
+            weather_code,
+            wind_speed_10m,
+            precipitation,
+            relative_humidity_2m,
+          }) => (
+            <WeatherCard
+              key={id}
+              id={id}
+              name={`${name}, ${country}`}
+              temperature={`${temperature_2m}°C`}
+              weatherCode={weather_code as WeatherCode}
+              windSpeed={wind_speed_10m}
+              precipitation={precipitation}
+              humidity={relative_humidity_2m}
+              isDay={Boolean(is_day)}
+            />
+          ),
+        )
       ) : (
         <div className="flex flex-col items-center justify-center w-full md:hidden gap-2 text-center mt-8">
           <div className="bg-neutral-200 p-4 rounded-full mb-4">
