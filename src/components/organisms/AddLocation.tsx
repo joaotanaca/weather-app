@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { observer } from 'mobx-react';
 import { FiArrowLeft, FiNavigation } from 'react-icons/fi';
@@ -11,6 +11,7 @@ import Button from '../atom/Button';
 import Alert from '../molecules/Alert';
 import tailwind from '@/constants/colors/tailwind';
 import { AxiosError } from 'axios';
+import validateUniqueForecast from '@/helpers/validateUniqueForecast';
 
 const AddLocation = observer(() => {
   const navigate = useNavigate();
@@ -19,6 +20,13 @@ const AddLocation = observer(() => {
   const [error, setError] = useState(false);
 
   const handleAddLocation = useCallback(async () => {
+    if (validateUniqueForecast(forecasts.forecasts, city.citySelected)) {
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 2000);
+      return;
+    }
     if (!city.citySelected.country) return;
     try {
       setLoading(true);
@@ -51,6 +59,11 @@ const AddLocation = observer(() => {
     }
   }, [step, handleAddLocation]);
 
+  const erroMessage = useMemo(
+    () => (!step ? 'Campo cidade ou longitude e latitude obrigatórios!' : 'Cidade já adicionada!'),
+    [step],
+  );
+
   return (
     <div className="flex flex-col gap-4 md:bg-white md:dark:bg-[#1B1B1D] rounded-lg px-6 py-5 w-full max-w-2xl mx-auto md:shadow-card">
       <div
@@ -80,7 +93,7 @@ const AddLocation = observer(() => {
           </div>
         </div>
       </div>
-      {error ? <Alert color="critical" title="Campo cidade ou longitude e latitude obrigatórios!" /> : null}
+      {error ? <Alert color="critical" title={erroMessage} /> : null}
       <div className={`flex ${step ? 'justify-between' : 'justify-end'}  mt-6`}>
         {step ? (
           <Button color="transparent" onClick={handlePreviousStep}>
